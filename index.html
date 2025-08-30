@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة المهام | تطبيق عصري</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>قائمة المهام</h1>
+            <div class="theme-switch">
+                <i class="fas fa-moon"></i>
+            </div>
+        </header>
+
+        <div class="todo-input">
+            <input type="text" id="task-input" placeholder="أضف مهمة جديدة...">
+            <button id="add-task-btn">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+
+        <div class="filters">
+            <div class="filter active" data-filter="all">الكل</div>
+            <div class="filter" data-filter="active">نشط</div>
+            <div class="filter" data-filter="completed">مكتمل</div>
+        </div>
+
+        <div class="todo-list" id="todo-list">
+            <!-- Tasks will be added here by JavaScript -->
+        </div>
+
+        <div class="todo-stats">
+            <span id="tasks-counter">0 مهام متبقية</span>
+            <button id="clear-completed">مسح المكتملة</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>اسحب وأفلت لإعادة ترتيب المهام</p>
+    </footer>
+
+    <script src="jaa.js"></script>
+</body>
+</html>
